@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://vectorlogoseek.com/wp-content/uploads/2020/02/sourcegraph-vector-logo.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
