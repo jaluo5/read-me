@@ -15,15 +15,14 @@ Sourcegraph is a code search and intelligence tool for developers. It lets you s
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-1. git clone $FORK_URL (https://github.com/sourcegraph/deploy-sourcegraph)
-2. 
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Make sure you are in the right cluster and namespace before updating Sourcegraph.
+* Cluster: Main-production-red-usw2 | Namespace: Sourcegraph
   ```sh
-  npm install npm@latest -g
+  kubectl config set-context $(kubectl config current-context) --namespace=sourcegraph
   ```
 
 ### Installation
