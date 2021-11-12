@@ -27,16 +27,40 @@ Make sure you are in the right cluster and namespace before updating Sourcegraph
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/sourcegraph/deploy-sourcegraph
    ```
-3. Install NPM packages
+2. Delete all hidden .git files/directory
    ```sh
-   npm install
+   ls -la
    ```
-4. Enter your API in `config.js`
+3. Configure codeintel-db.Deployment.yaml images to the newest version
+*pgsql
+*PG_EXPORTER_EXTEND_QUERY_PATH
+
+4. Configure sourcegraph-frontend.deployment.yaml images to the newest version
+*frontend
+*jaeger-agent
+
+5. Configure github-proxy.Deployment.yam
+*github-proxy
+*jaeger-agent
+
+6. Configure gitserver.Statefulset.yaml
+*gitserver
+*jaeger-agent
+
+7. Configure indexed-search.StatefulSet.yaml images to the newest version
+*zoekt-webserver
+*zoek-indexserver
+
+8. Configure minio.Deployment.yaml image to the newest version
+*MINI_SECRET_KEY
+
+9. Configure pgsql.Deployment.yaml images to the newest version
+* correct-data-dir-permissions
+* (Containers: env:)
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
