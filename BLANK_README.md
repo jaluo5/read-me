@@ -1,5 +1,5 @@
 <!-- Sourcegraph -->
-## About The Project
+## Sourcegraph
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
