@@ -38,11 +38,13 @@ Make sure you are in the right cluster and namespace before updating Sourcegraph
 3. Configure codeintel-db.Deployment.yaml images to the newest version
 
 *pgsql
+
 *PG_EXPORTER_EXTEND_QUERY_PATH
 
 4. Configure sourcegraph-frontend.deployment.yaml images to the newest version
 
 *frontend
+
 *jaeger-agent
 
 5. Configure github-proxy.Deployment.yaml images to the newest version
