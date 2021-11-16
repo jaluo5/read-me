@@ -36,53 +36,68 @@ Make sure you are in the right cluster and namespace before updating Sourcegraph
    ls -la
    ```
 3. Configure codeintel-db.Deployment.yaml images to the newest version
+
 *pgsql
 *PG_EXPORTER_EXTEND_QUERY_PATH
 
 4. Configure sourcegraph-frontend.deployment.yaml images to the newest version
+
 *frontend
 *jaeger-agent
 
 5. Configure github-proxy.Deployment.yaml images to the newest version
+
 *github-proxy
 *jaeger-agent
 
 6. Configure gitserver.Statefulset.yaml images to the newest version
+
 *gitserver
 *jaeger-agent
 
 7. Configure indexed-search.StatefulSet.yaml images to the newest version
+
 *zoekt-webserver
 *zoek-indexserver
 
 8. Configure minio.Deployment.yaml image to the newest version
+
 *MINI_SECRET_KEY
 
 9. Configure pgsql.Deployment.yaml images to the newest version
+
 *correct-data-dir-permissions 
 *container
 *PG_EXPORTER_EXTEND_QUERY_PATH
 
 10. Configure worker.deployment.yaml image to the newest version
+
 *fieldPath: metadata.name
 
 11. Configure query-runner.Deployment.yaml images to the newest version
+
 *query-runner
 
 12. Configure redis-cache.Deployment image to the newest version
+
 *redis-store
 
 13. Configure repo-updater.Deployment.yaml images to the newest version
+
 *repo-updater
 *jaeger-agent
 
 14. Configure searcher.Deployment.yaml images to the newest version
+
 *CACHE_DIR  
 *jaeger-agent
 
 15. Configure work.Deployment.yaml image to the newest version
+
 *metadata.name
-   ```js
+
+
+```js
    const API_KEY = 'ENTER YOUR API';
    ```
 
